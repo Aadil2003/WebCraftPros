@@ -1,0 +1,89 @@
+body{
+
+    font: 15px/1.5 Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header{
+    
+    background: #35424a;
+    color: white;
+    padding: 20px;
+    min-height: 50px;
+    border-bottom: red 3px solid;
+    
+    
+    
+    
+    }
+    header a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    header ul {
+    margin: 20px 0 0 0;
+        padding: 0;
+        display: inline;
+       
+    
+    }
+    header li {
+    
+        display: inline;
+        padding: 0 20px 0 20px;
+    
+    }
+    header #branding
+    {margin:5px 0 0 0;
+        float: left;
+    }
+    nav {
+    
+    margin: 0%;
+    margin-top: 20px;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    
+    } 
+  
+  
+  
+
+
+
+
+header a:hover{
+    text-shadow: 3px 3px 5px black;
+
+
+ }
+ 
+#newsletter h1{float: left;}
+#newsletter form{float: right;
+margin-top: 25px;}
+#newsletter input[type="email"]
+{
+    padding: 10px 70px 10px 70px;
+}
+.button-1{
+    padding: 8px 70px 9px 70px;
+    font-size: 16px;
+ background: rgb(189, 50, 50);
+ border: 0;
+ color: white;}
+ .button-1:hover{
+    box-shadow:3px 3px 5px black ;
+    }
+
+   label{ font-weight: bold;
+    
+
+
+
+   }
