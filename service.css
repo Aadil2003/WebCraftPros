@@ -111,10 +111,6 @@ section {
   text-align: center;
 }
 
-#quote {
-  background-color: rgb(163, 150, 150, 0.25);
-}
-
 #quote-form {
   background-color: rgba(163, 150, 150, 0.25);
   padding: 30px;
