@@ -1,89 +1,188 @@
-body{
+body {
+  font: 15px/1.5 Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
 
-    font: 15px/1.5 Arial, sans-serif;
+header {
+  background: #35424a;
+  color: white;
+  padding: 25px;
+  min-height: 50px;
+  border-bottom: red 3px solid;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .highlight {
+  color: red;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: inline;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px;
+}
+
+nav {
+  float: right;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+header a:hover {
+  text-shadow: 3px 3px 5px black;
+}
+
+section {
+  padding: 40px 0;
+}
+
+#newsletter {
+  background: rgb(142, 142, 223);
+  text-align: center;
+}
+
+#newsletter h1 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+#newsletter-form {
+  margin-top: 25px;
+}
+
+#newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button-1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: rgb(189, 50, 50);
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.button-1:hover {
+  box-shadow: 3px 3px 5px black;
+}
+
+#services .service-box {
+  background-color: rgb(154, 148, 148, 0.25);
+  color: rgb(190, 175, 175);
+  text-align: center;
+  padding: 20px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+#services .service-item {
+  background-color: rgba(92, 89, 89, 0.25);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#quote {
+  background-color: rgb(163, 150, 150, 0.25);
+}
+
+#quote-form {
+  background-color: rgba(163, 150, 150, 0.25);
+  padding: 30px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#quote-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#quote-form input[type="text"],
+#quote-form input[type="email"],
+#quote-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#quote-form textarea {
+  height: 150px;
+}
+
+footer {
+  background: rgb(163, 157, 157);
+  border: solid rgb(182, 94, 94) 3px;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+    position: static;
+    margin-top: 10px;
+  }
+
+  header ul {
     padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;
+  }
+
+  header li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  #newsletter input[type="email"] {
+    width: calc(100% - 22px);
+  }
+
+  #quote-form {
+    width: calc(100% - 40px);
+  }
 }
-
-header{
-    
-    background: #35424a;
-    color: white;
-    padding: 20px;
-    min-height: 50px;
-    border-bottom: red 3px solid;
-    
-    
-    
-    
-    }
-    header a{
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-    header ul {
-    margin: 20px 0 0 0;
-        padding: 0;
-        display: inline;
-       
-    
-    }
-    header li {
-    
-        display: inline;
-        padding: 0 20px 0 20px;
-    
-    }
-    header #branding
-    {margin:5px 0 0 0;
-        float: left;
-    }
-    nav {
-    
-    margin: 0%;
-    margin-top: 20px;
-    float: right;
-    position: absolute;
-    top: 20px;
-    right: 16px;
-    
-    } 
-  
-  
-  
-
-
-
-
-header a:hover{
-    text-shadow: 3px 3px 5px black;
-
-
- }
- 
-#newsletter h1{float: left;}
-#newsletter form{float: right;
-margin-top: 25px;}
-#newsletter input[type="email"]
-{
-    padding: 10px 70px 10px 70px;
-}
-.button-1{
-    padding: 8px 70px 9px 70px;
-    font-size: 16px;
- background: rgb(189, 50, 50);
- border: 0;
- color: white;}
- .button-1:hover{
-    box-shadow:3px 3px 5px black ;
-    }
-
-   label{ font-weight: bold;
-    
-
-
-
-   }

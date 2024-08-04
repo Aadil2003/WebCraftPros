@@ -1,111 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        
-    
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Service page</title>
-    <link rel="stylesheet" href="service.css">
-  </head>
-  <header>
-    <div class="container" style="margin: 0%;">
-        <div id="branding" >
-            <h1 style="font-size: 35px; margin: 0%;"><span style="color: red;">Techno </span>web desinger</h1>
-    
-    
-    
-    
-    
-        </div>
-    <nav>
-    <ul>
-    
-    <li>
-        <a href="html.html" style="color: red;">home</a>
-    </li>
-    <li>
-        <a href="about.html">about</a>
-    </li>
-    <li>
-        <a href="service.html">service</a>
-    </li>
-    
-    
-    
-    
-    
-    </ul>
-    
-    </nav>
-    
-    
-    
-    
-    </div>
-    
-        </header>
-    </body>
-    
-<section id="newsletter" style="background: rgb(142, 142, 223); padding-bottom: 90px; text-align: center; ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Service Page</title>
+  <link rel="stylesheet" href="service.css">
+</head>
+<body>
+  <header id="main-header">
     <div class="container">
-
-        <h1 style="margin-top: 20px;font-size: 25px; position: absolute; left: 13%; top: 13%;">Subscribe to our newsletter</h1>
-        <form style="position: absolute; right: 15%;">
-<input type="email" placeholder="enter your email" >
-<button type="submit" class="button-1">subscribe</button>
-
-        </form>
-
-
-
-
+      <div id="branding">
+        <h1><span class="highlight">Techno</span> Web Designer</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-
-
-
-
-</section >
-<section>
-<div style="background-color: rgb(154, 148, 148, .25); color: rgb(190, 175, 175, ); width: 20%;text-align: center; margin:20px;padding:3px 5px 3px 5px;border-radius: 100px;">
-    <h1 >services we provide</h1>
-</div>
-<div style="padding: 20px; background-color: rgba(92, 89, 89, 0.25);width: 70%; margin: 30px; ">
-<h1>website design</h1>
-<p>we have professional designers to create a pleasing websites as per your need</p>
-</div>
-
-<div style="padding: 20px; background-color: rgba(92, 89, 89, 0.25); width: 70%; margin: 30px;">
-    <h1>website management</h1>
-    <p>we are also experts in website management. handle your website to us and be free. we also provide security for your website </p>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe to Our Newsletter</h1>
+      <form id="newsletter-form">
+        <input type="email" placeholder="Enter your email" id="email">
+        <button type="submit" class="button-1">Subscribe</button>
+      </form>
     </div>
+  </section>
 
-    <div style="padding: 20px; background-color: rgba(92, 89, 89, 0.25);  width: 70%; margin: 30px;"  >
-        <h1>website hosting</h1>
-        <p>our team is specialized in website hosting. host your website soon. we also provide fancy domains</p>
-        </div>
+  <section id="services">
+    <div class="container">
+      <div class="service-box">
+        <h1>Services We Provide</h1>
+      </div>
+      <div class="service-item">
+        <h2>Website Design</h2>
+        <p>We have professional designers to create a pleasing website as per your needs.</p>
+      </div>
+      <div class="service-item">
+        <h2>Website Management</h2>
+        <p>We are experts in website management. Handle your website to us and be free. We also provide security for your website.</p>
+      </div>
+      <div class="service-item">
+        <h2>Website Hosting</h2>
+        <p>Our team is specialized in website hosting. Host your website soon. We also provide fancy domains.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="quote">
+    <div class="container">
+      <form id="quote-form">
+        <h1>Get a Quote</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="quote-email">Email</label>
+        <input type="email" name="email" id="quote-email">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit" class="button-1">Submit</button>
+      </form>
+    </div>
+  </section>
 
-</section>
+  <footer>
+    <p><span class="highlight">Techno</span> Web Designer, &copy; 2023</p>
+  </footer>
 
-<section>
-<div>
-    <form style="background-color: rgb(163, 150, 150,.25); float: right; position: absolute; top:40%; right: 20px; padding: 30px;border-radius: 50px;">
-        <h1>Get a quote</h1>
-        <label for="name" style="margin-right: 36px;"> Name</label> <input type="text" name="name"> <br >
-        <label for="email" style="margin-right: 37px;"> Email</label> <input type="email" name="email"> <br>
-        <label for="message" style="margin-right: 5px;"> Messsage</label> <input type="text" name="message"> <br>
-        <button type="submit" style="background-color: red;padding: 5px;padding-left: 20px; padding-right: 20px; margin: 20px 0px 20px 200px;">submit</button>
-        
-
-
-
-    </form>
-
-
-</div>
-
-</section>
+  <script src="service.js"></script>
+</body>
+</html>

@@ -1,101 +1,120 @@
-body{
-
+body {
     font: 15px/1.5 Arial, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
-}
-
-
-header{
-    
+  }
+  
+  header {
     background: #35424a;
     color: white;
     padding: 25px;
     min-height: 50px;
     border-bottom: red 3px solid;
     margin: 0;
-    
-    
-    
-    }
-    header a{
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-    header ul {
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header .highlight {
+    color: red;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  header ul {
     margin: 20px 0 0 0;
-        padding: 0;
-        display: inline;
-       
-    
+    padding: 0;
+    display: inline;
+  }
+  
+  header li {
+    display: inline;
+    padding: 0 20px;
+  }
+  
+  nav {
+    float: right;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+  
+  header a:hover {
+    text-shadow: 3px 3px 5px black;
+  }
+  
+  section#about {
+    background-image: url('backgroungaboutus.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 40px 0;
+    position: relative;
+  }
+  
+  section#about p {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(92, 89, 89, 0.25);
+    border-radius: 25px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  footer {
+    background: rgb(163, 157, 157);
+    border: solid rgb(182, 94, 94) 3px;
+    padding: 12px 10px;
+    text-align: center;
+  }
+  
+  footer h1 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  footer a {
+    color: red;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav {
+      float: none;
+      text-align: center;
+      width: 100%;
+      position: static;
+      margin-top: 10px;
     }
+  
+    header ul {
+      padding: 0;
+    }
+  
     header li {
-    
-        display: inline;
-        padding: 0 20px 0 20px;
-    
+      display: block;
+      padding: 10px 0;
     }
-    nav{
-        float: right;
-        position: absolute;
-        top: 50px;
-        right: 30px;
+  
+    section#about p {
+      font-size: 18px;
+      width: 90%;
     }
-    header a:hover{
-        text-shadow: 3px 3px 5px black;
-    
-    
-     }
-
-     nav {
-
-        margin: 0%;
-        margin-top: 20px;
-        float: right;
-        position: absolute;
-        top: 20px;
-        right: 16px;
-        
-        }
-        .body {
-      background-image: url(backgroungaboutus.jpg) ;
-      background-repeat: repeat;
-      background-size: cover;
-      
-      margin: 0px;
-      height: 550px;
-      position: relative;
-     
-
-
-
-
-    }
-    .body p{
-        font-size: 20px;
-        display: inline;
-        color: white;
-        margin: 0;
-        width: 50%;
-        position: absolute;
-        top: 18%;
-        left: 25%;
-        background-color: rgba(92, 89, 89, 0.25);
-       border-radius: 25px;
-
-       padding: 20px;
-      
-
-    }
-
-    footer h1{
-        margin-right: 100px;
-        font-size: 22px;
-        float: right;
-
-
-
-    } 
+  }
+  
