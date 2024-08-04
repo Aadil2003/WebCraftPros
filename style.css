@@ -11,41 +11,50 @@ body {
     overflow: hidden;
   }
   
-  header {
-    background: #35424a;
-    color: white;
-    padding: 20px;
-    min-height: 50px;
-    border-bottom: red 3px solid;
-  }
-  
-  header a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  
-  header ul {
-    margin: 20px 0 0 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  header li {
-    display: inline;
-    padding: 0 20px;
-  }
-  
-  header #branding {
-    margin: 5px 0 0 0;
-    float: left;
-  }
-  
-  nav {
-    float: right;
-    margin-top: 10px;
-  }
+header {
+  background: #35424a;
+  color: white;
+  padding: 25px;
+  min-height: 50px;
+  border-bottom: red 3px solid;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .highlight {
+  color: red;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: inline;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px;
+}
+
+nav {
+  float: right;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+header a:hover {
+  text-shadow: 3px 3px 5px black;
+}
   
   #showcase {
     color: white;
