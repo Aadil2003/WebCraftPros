@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font: 15px/1.5 Arial, sans-serif;
   padding: 0;
@@ -11,6 +12,7 @@ header {
   padding: 25px;
   min-height: 50px;
   border-bottom: red 3px solid;
+  position: relative; /* Ensure nav is positioned correctly */
 }
 
 header h1 {
@@ -84,6 +86,10 @@ section {
 
 .button-1:hover {
   box-shadow: 3px 3px 5px black;
+}
+
+#services {
+  padding: 40px 0;
 }
 
 #services .service-box {
@@ -179,10 +185,48 @@ footer a:hover {
   }
 
   #newsletter input[type="email"] {
-    width: calc(100% - 22px);
+    width: calc(100% - 22px); /* Adjust width for small screens */
   }
 
   #quote-form {
-    width: calc(100% - 40px);
+    width: calc(100% - 40px); /* Adjust width for small screens */
+  }
+
+  #services .service-item {
+    width: calc(100% - 40px); /* Adjust width for small screens */
+    margin: 10px auto;
+  }
+
+  .button-1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header a {
+    font-size: 14px;
+  }
+  header {
+    text-align: center;
+  }
+
+  #newsletter h1 {
+    font-size: 20px;
+  }
+
+  #newsletter input[type="email"] {
+    width: calc(100% - 20px); /* Further adjust width for very small screens */
+  }
+
+  #quote-form {
+    width: calc(100% - 20px); /* Further adjust width for very small screens */
+  }
+
+  #quote-form textarea {
+    height: 120px; /* Adjust height for smaller screens */
+  }
+
+  footer p {
+    font-size: 16px;
   }
 }
