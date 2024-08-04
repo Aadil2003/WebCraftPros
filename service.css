@@ -97,15 +97,18 @@ section {
 
 #services {
   padding: 40px 0;
+  
 }
 
 #services .service-box {
-  background-color: rgb(154, 148, 148, 0.25);
-  color: rgb(190, 175, 175);
-  text-align: center;
+  background-color: rgba(92, 89, 89, 0.25);
   padding: 20px;
-  border-radius: 100px;
-  margin-bottom: 20px;
+  margin: 20px auto;
+  width: calc(100% - 40px); /* Adjust width for margin */
+  max-width: 1000px;
+  border-radius: 200px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 #services .service-item {
@@ -119,7 +122,7 @@ section {
 }
 
 #quote-form {
-  background-color: rgba(163, 150, 150, 0.25);
+  background-color: rgba(92, 89, 89, 0.25);
   padding: 30px;
   border-radius: 25px;
   width: calc(100% - 40px); /* Adjust width for margins */
