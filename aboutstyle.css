@@ -95,6 +95,9 @@ body {
   
   /* Responsive Styles */
   @media (max-width: 768px) {
+    header {
+      text-align: center;
+    }
     nav {
       float: none;
       text-align: center;
